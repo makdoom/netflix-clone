@@ -1,0 +1,22 @@
+.row-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+.row-image {
+  max-height: 150px;
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 450ms;
+  margin-right: 10px;
+}
+
+.row-image:hover {
+  transform: scale(1.08);
+}
