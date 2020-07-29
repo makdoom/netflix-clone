@@ -1,0 +1,32 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-black {
+  background-color: #000;
+}
+
+.nav .logo {
+  object-fit: contain;
+  width: 90px;
+}
+
+.nav .login {
+  padding: 5px 2rem;
+  border: none;
+  outline: none;
+  background: #e50914;
+  border-radius: 0.2rem;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}

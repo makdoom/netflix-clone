@@ -1,6 +1,11 @@
 .row {
   margin-left: 10px;
 }
+
+.row h2 {
+  letter-spacing: 1px;
+}
+
 .row-posters {
   display: flex;
   overflow-y: hidden;
