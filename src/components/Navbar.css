@@ -8,7 +8,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.1rem;
-  transition: all 0.3s ease-in-out;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 }
 
 .nav-black {

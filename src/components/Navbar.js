@@ -5,7 +5,7 @@ const Navbar = () => {
   const [show, handleShow] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY > 70 ? handleShow(true) : handleShow(false);
+      window.scrollY > 20 ? handleShow(true) : handleShow(false);
     });
     return () => window.removeEventListener("scroll");
   }, []);
