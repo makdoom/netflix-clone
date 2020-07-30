@@ -65,8 +65,7 @@
   top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* border: 1px solid white; */
-  width: 70%;
+  width: 700px;
   text-align: center;
 }
 
@@ -120,6 +119,10 @@ h1 .orange {
 
 .input__field button:hover {
   background: #fc0814;
+}
+
+button .fa {
+  font-size: 1rem;
 }
 
 .home__content p {

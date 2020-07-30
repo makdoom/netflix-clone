@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "../node_modules/font-awesome/css/font-awesome.min.css";
 import Row from "./components/Row";
 import requests from "./requests";
 import Banner from "./components/Banner";
