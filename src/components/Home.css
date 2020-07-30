@@ -1,0 +1,128 @@
+.home {
+  width: 100%;
+  height: 80vh;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/9bab8662-5230-490a-9da7-d5006d0fc254/5ef8e0d9-ea4c-4392-a6f8-262274f94b83/IN-vlv-thali-small.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  object-fit: contain;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  box-shadow: inset 0px 100px 250px rgba(0, 0, 0, 0.8),
+    inset 0px -100px 250px rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+  position: absolute;
+  left: 0;
+  height: 12rem;
+  width: 100%;
+  bottom: 0%;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(32, 15, 15, 0.8),
+    #111111
+  );
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+  z-index: 2;
+}
+
+.nav img {
+  width: 130px;
+}
+
+.nav .sign__in {
+  background: #e50914;
+  border: none;
+  outline: none;
+  padding: 8px 19px;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 0.3rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+}
+
+.home__content {
+  z-index: 2;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid white; */
+  width: 70%;
+  text-align: center;
+}
+
+.home__content h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: bold;
+  font-family: "DM Sans", sans-serif;
+}
+
+.home__content h1 .gradient {
+  background: -webkit-linear-gradient(300deg, #ff7a00, #c425a4);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 .orange {
+  color: #f6612c;
+}
+
+.input__field {
+  margin-top: 40px;
+  height: 55px;
+  display: flex;
+}
+
+.input__field input {
+  width: 70%;
+  padding: 0 10px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-top-left-radius: 0.1rem;
+  border-bottom-left-radius: 0.1rem;
+  letter-spacing: 0.8px;
+}
+
+.input__field button {
+  width: 30%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background: #e50914;
+  letter-spacing: 0.8px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-top-right-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
+}
+
+.input__field button:hover {
+  background: #fc0814;
+}
+
+.home__content p {
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
