@@ -1,38 +1,53 @@
-.accordion {
-  width: 90%;
-  margin: auto;
-  border: 1px solid white;
-  max-width: 1000px;
+.FAQS {
+  margin: 4rem 0;
 }
-
-.accordion h1 {
+.FAQS h1 {
   text-align: center;
-}
-
-.accordion__item {
-  background: #303030;
-  margin: 10px auto;
-  width: 80%;
-}
-
-.accordion__header {
-  padding: 0.8rem 1rem;
-  font-size: 1.7rem;
-  display: flex;
-  cursor: pointer;
-  position: relative;
-  line-height: 2.2rem;
-}
-
-.accordion__header::after {
-  content: "+";
   font-size: 3rem;
-  position: absolute;
-  right: 1.2rem;
-  line-height: 2.2rem;
+  margin-bottom: 3rem;
 }
 
-.accordion__header.active::after {
-  content: "\2715";
-  font-size: 2rem;
+.FAQS .faq {
+  width: 70%;
+  margin: 10px auto;
+  background: #303030;
+  max-width: 768px;
+  transition: all 0.2s ease-in-out;
+}
+
+.FAQS .accordion__header {
+  font-size: 1.8rem;
+  border-bottom: 1px solid black;
+  padding: 15px 0px;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.FAQS .accordion__header::after {
+  content: "+";
+  position: absolute;
+  line-height: 2rem;
+  height: 2rem;
+  right: 30px;
+  font-size: 3.5rem;
+  transition: 0.2s ease;
+}
+
+.FAQS .accordion__body {
+  opacity: 0;
+  overflow-y: hidden;
+  max-height: 0;
+  transition: 0.2s ease-in-outs;
+}
+
+.FAQS .faq.open .accordion__header::after {
+  transform: rotate(45deg);
+}
+
+.FAQS .faq.open .accordion__body {
+  max-height: 500px;
+  opacity: 1;
+  padding: 20px 30px;
+  font-size: 1.6rem;
 }
