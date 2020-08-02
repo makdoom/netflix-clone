@@ -1,5 +1,36 @@
-.home__rows {
+.rows__content {
   margin-top: 10rem;
-  border: 1px solid white;
-  border-top: 6px solid #57565699;
+  border-bottom: 6px solid #313030;
+}
+
+.rows__content .row {
+  margin: 0;
+  padding: 0;
+  border-top: 6px solid #313030;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.2rem;
+}
+
+.rows__content .row .row__desc h1 {
+  font-size: 3rem;
+  margin-bottom: 13px;
+}
+
+.rows__content .row .row__desc p {
+  font-size: 1.5rem;
+}
+
+.row .row__image {
+  height: 320px;
+  /* border: 1px solid white; */
+}
+
+.desktop {
+  background-color: #0000;
+}
+
+.row .row__image img {
+  height: 100%;
 }

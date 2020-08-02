@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import HomeRows from "./HomeRows";
+import HomeAccordion from "./HomeAccordion";
 
 const Home = () => {
   return (
@@ -34,6 +35,7 @@ const Home = () => {
       </div>
 
       <HomeRows />
+      <HomeAccordion />
     </>
   );
 };
