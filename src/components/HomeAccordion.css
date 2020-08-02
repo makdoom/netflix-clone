@@ -1,0 +1,38 @@
+.accordion {
+  width: 90%;
+  margin: auto;
+  border: 1px solid white;
+  max-width: 1000px;
+}
+
+.accordion h1 {
+  text-align: center;
+}
+
+.accordion__item {
+  background: #303030;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.accordion__header {
+  padding: 0.8rem 1rem;
+  font-size: 1.7rem;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  line-height: 2.2rem;
+}
+
+.accordion__header::after {
+  content: "+";
+  font-size: 3rem;
+  position: absolute;
+  right: 1.2rem;
+  line-height: 2.2rem;
+}
+
+.accordion__header.active::after {
+  content: "\2715";
+  font-size: 2rem;
+}

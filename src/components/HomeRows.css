@@ -24,11 +24,6 @@
 
 .row .row__image {
   height: 320px;
-  /* border: 1px solid white; */
-}
-
-.desktop {
-  background-color: #0000;
 }
 
 .row .row__image img {
