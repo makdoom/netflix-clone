@@ -2,6 +2,8 @@ import React from "react";
 import "./Home.css";
 import HomeRows from "./HomeRows";
 import HomeAccordion from "./HomeAccordion";
+import EmailComp from "./EmailComp";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -20,22 +22,15 @@ const Home = () => {
             <br /> <span className="orange">Bollywood &</span>{" "}
             <span className="gradient">more.</span>{" "}
           </h1>
-          <form className="input__field">
-            <input type="email" placeholder="Email address" required />
-            <button className="started">
-              Get Started &nbsp;<i className="fa fa-chevron-right"></i>{" "}
-            </button>
-          </form>
-          <p>
-            Ready to watch? Enter your email to create or restart your
-            membership.
-          </p>
+          <EmailComp />
         </div>
         <div className="fade"></div>
       </div>
 
       <HomeRows />
       <HomeAccordion />
+      <EmailComp />
+      <Footer />
     </>
   );
 };

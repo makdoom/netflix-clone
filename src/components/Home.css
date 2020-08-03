@@ -86,10 +86,18 @@ h1 .orange {
   color: #f6612c;
 }
 
+.email {
+  width: 700px;
+  margin: auto;
+}
 .input__field {
+  text-align: center;
   margin-top: 40px;
   height: 55px;
   display: flex;
+  width: 100%;
+  justify-content: center;
+  /* border: 1px solid white; */
 }
 
 .input__field input {
@@ -125,7 +133,30 @@ button .fa {
   font-size: 1rem;
 }
 
+.home__content p,
+.email p {
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+/* 
+.input__field {
+}
+
+.input__field input {
+  width: 70%;
+  padding: 0 10px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-top-left-radius: 0.1rem;
+  border-bottom-left-radius: 0.1rem;
+  letter-spacing: 0.8px;
+}
+
+
+
 .home__content p {
   margin-top: 10px;
   letter-spacing: 0.5px;
-}
+} */
