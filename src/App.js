@@ -6,11 +6,17 @@ import requests from "./requests";
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import { Route, Switch } from "react-router-dom";
+import SignIn from "./components/SignIn";
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/signin" component={SignIn} />
+      </Switch>
+
       {/* <Navbar />
       <Banner />
       <Row

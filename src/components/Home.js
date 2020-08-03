@@ -4,6 +4,7 @@ import HomeRows from "./HomeRows";
 import HomeAccordion from "./HomeAccordion";
 import EmailComp from "./EmailComp";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -14,7 +15,9 @@ const Home = () => {
             src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
             alt="Netflix Logo"
           />
-          <button className="sign__in">Sign In</button>
+          <Link to="./SignIn">
+            <button className="sign__in">Sign In</button>
+          </Link>
         </div>
         <div className="home__content">
           <h1>
