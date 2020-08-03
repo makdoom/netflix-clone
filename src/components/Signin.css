@@ -1,0 +1,90 @@
+.signin__page {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/9bab8662-5230-490a-9da7-d5006d0fc254/5ef8e0d9-ea4c-4392-a6f8-262274f94b83/IN-vlv-thali-small.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.signin__page::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.header img {
+  z-index: 2;
+  height: 100px;
+  width: 180px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+.signin__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.75);
+  width: 400px;
+  padding: 2rem 3rem;
+}
+
+.signin__box h2 {
+  font-size: 2rem;
+  letter-spacing: 0.7px;
+  margin-bottom: 10px;
+}
+
+.signin__page .input__box {
+  width: 100%;
+}
+
+.input__box .input {
+  width: 100%;
+  padding: 16px 13px;
+  margin: 8px 0;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background: #333;
+  color: white;
+  font-size: 1rem;
+}
+
+button {
+  background: #e50914;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #a8a8a8;
+}
+
+.help {
+  display: flex;
+  /* border: 1px solid white; */
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin: 8px 0;
+}
+
+.help a {
+  color: #a8a8a8;
+  text-decoration: none;
+}
