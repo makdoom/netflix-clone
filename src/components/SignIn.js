@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Signin.css";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
     <div className="signin__page">
       <div className="header">
@@ -16,22 +21,42 @@ const Signup = () => {
         </div>
         <div className="input__box">
           <form>
-            <input className="input" type="text" placeholder="Username" />
-            <br />
-            <input className="input" type="email" placeholder="Email" />
+            <input
+              onChange={(e) => setUsername(e.target.value)}
+              className="input"
+              type="text"
+              placeholder="Username"
+              value={username}
+              required="required"
+            />
             <br />
             <input
+              onChange={(e) => setEmail(e.target.value)}
+              className="input"
+              type="email"
+              placeholder="Email"
+              value={email}
+              required="required"
+            />
+            <br />
+            <input
+              onChange={(e) => setPassword(e.target.value)}
               className="input"
               type="password"
               placeholder="New Password"
+              value={password}
+              required="required"
             />
             <br />
-            <button className="submit">Submit</button>
+
+            <button className="submit">
+              <Link to="./netflixPage">Submit</Link>
+            </button>
           </form>
           <div className="help">
             <div className="rem">
               <input type="checkbox" name="remember" value="remember" />
-              <label for="remember">Remember me</label>
+              <label htmlFor="remember"> Remember me</label>
             </div>
             <div className="need">
               <a href="#">Need help ?</a>

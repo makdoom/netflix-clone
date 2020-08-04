@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const EmailComp = () => {
   return (
@@ -6,7 +7,9 @@ const EmailComp = () => {
       <form className="input__field">
         <input type="email" placeholder="Email address" required />
         <button className="started">
-          Get Started &nbsp;<i className="fa fa-chevron-right"></i>{" "}
+          <Link to="/netflixpage">
+            Get Started &nbsp;<i className="fa fa-chevron-right"></i>{" "}
+          </Link>
         </button>
       </form>
       <p>

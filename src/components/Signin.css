@@ -58,7 +58,14 @@
   font-size: 1rem;
 }
 
-button {
+.input__box .submit a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  border: 1px solid #000;
+}
+
+.input__box .submit {
   background: #e50914;
   width: 100%;
   margin-top: 20px;

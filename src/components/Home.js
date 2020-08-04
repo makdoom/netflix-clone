@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <div className="home">
-        <div className="nav">
+        <nav className="navbar">
           <img
             src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
             alt="Netflix Logo"
@@ -18,7 +18,7 @@ const Home = () => {
           <Link to="./SignIn">
             <button className="sign__in">Sign In</button>
           </Link>
-        </div>
+        </nav>
         <div className="home__content">
           <h1>
             Unlimited <br /> <span className="gradient">Hollywood,</span>

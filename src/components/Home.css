@@ -6,6 +6,7 @@
   background-size: cover;
   position: relative;
   object-fit: contain;
+  z-index: 1;
 }
 
 .home::after {
@@ -15,38 +16,24 @@
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: -1;
   background: rgba(0, 0, 0, 0.3);
-  z-index: 1;
   box-shadow: inset 0px 100px 250px rgba(0, 0, 0, 0.8),
     inset 0px -100px 250px rgba(0, 0, 0, 0.8);
 }
 
-.fade {
-  position: absolute;
-  left: 0;
-  height: 12rem;
-  width: 100%;
-  bottom: 0%;
-  background-image: linear-gradient(
-    180deg,
-    transparent,
-    rgba(32, 15, 15, 0.8),
-    #111111
-  );
-}
-
-.nav {
+.home nav {
   display: flex;
   justify-content: space-between;
   padding: 40px 50px;
   z-index: 2;
 }
 
-.nav img {
+.home nav img {
   width: 130px;
 }
 
-.nav .sign__in {
+.home nav .sign__in {
   background: #e50914;
   border: none;
   outline: none;
@@ -57,6 +44,7 @@
   font-size: 0.95rem;
   letter-spacing: 0.4px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .home__content {
@@ -111,7 +99,11 @@ h1 .orange {
   letter-spacing: 0.8px;
 }
 
-.input__field button {
+.input__field .started a {
+  color: white;
+  text-decoration: none;
+}
+.input__field .started {
   width: 30%;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -125,11 +117,11 @@ h1 .orange {
   border-bottom-right-radius: 0.1rem;
 }
 
-.input__field button:hover {
+.input__field .started:hover {
   background: #fc0814;
 }
 
-button .fa {
+.started .fa {
   font-size: 1rem;
 }
 
@@ -139,6 +131,21 @@ button .fa {
   letter-spacing: 0.5px;
   text-align: center;
 }
+
+.fade {
+  position: absolute;
+  left: 0;
+  height: 12rem;
+  width: 100%;
+  bottom: 0%;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(32, 15, 15, 0.8),
+    #111111
+  );
+}
+
 /* 
 .input__field {
 }
@@ -153,6 +160,7 @@ button .fa {
   border-bottom-left-radius: 0.1rem;
   letter-spacing: 0.8px;
 }
+
 
 
 

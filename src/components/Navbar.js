@@ -5,9 +5,15 @@ const Navbar = () => {
   const [show, handleShow] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY > 20 ? handleShow(true) : handleShow(false);
+      if (window.scrollY > 100) {
+        handleShow(true);
+      } else {
+        handleShow(false);
+      }
     });
-    return () => window.removeEventListener("scroll");
+    return () => {
+      window.removeEventListener("scroll");
+    };
   }, []);
 
   return (
@@ -17,9 +23,6 @@ const Navbar = () => {
         src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
         alt="Netflix Logo"
       />
-      <div className="login-button">
-        <button className="login">Login</button>
-      </div>
     </div>
   );
 };
