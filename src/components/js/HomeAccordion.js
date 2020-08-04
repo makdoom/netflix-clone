@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./HomeAccordion.css";
+import "../css/HomeAccordion.css";
 import FAQ from "./FAQ";
 
 const HomeAccordion = () => {

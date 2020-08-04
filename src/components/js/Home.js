@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import "../css/Home.css";
 import HomeRows from "./HomeRows";
 import HomeAccordion from "./HomeAccordion";
 import EmailComp from "./EmailComp";

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import axios from "../axios";
-import "./Row.css";
+import axios from "../../axios";
+import "../css/Row.css";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
 
@@ -34,7 +34,6 @@ const Row = ({ title, fetchURL, isLargeRow }) => {
       movieTrailer(movie?.name || "")
         .then((url) => {
           const urlParams = new URLSearchParams(new URL(url).search);
-          // const id = new URLSearchParams(urlParams);
           setTrailerURL(urlParams.get("v"));
         })
         .catch((error) => console.log(error));

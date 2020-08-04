@@ -134,6 +134,7 @@ h1 .orange {
 
 .fade {
   position: absolute;
+  z-index: 1;
   left: 0;
   height: 12rem;
   width: 100%;
@@ -141,30 +142,7 @@ h1 .orange {
   background-image: linear-gradient(
     180deg,
     transparent,
-    rgba(32, 15, 15, 0.8),
-    #111111
+    rgba(2, 2, 2, 0.8),
+    #000000
   );
 }
-
-/* 
-.input__field {
-}
-
-.input__field input {
-  width: 70%;
-  padding: 0 10px;
-  font-size: 1rem;
-  outline: none;
-  border: none;
-  border-top-left-radius: 0.1rem;
-  border-bottom-left-radius: 0.1rem;
-  letter-spacing: 0.8px;
-}
-
-
-
-
-.home__content p {
-  margin-top: 10px;
-  letter-spacing: 0.5px;
-} */

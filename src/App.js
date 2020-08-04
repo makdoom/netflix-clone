@@ -1,10 +1,10 @@
 import React from "react";
-import "./App.css";
+import "./components/css/App.css";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
-import Home from "./components/Home";
+import Home from "./components/js/Home";
 import { Route, Switch } from "react-router-dom";
-import SignIn from "./components/SignIn";
-import NetflixPage from "./components/NetflixPage";
+import SignIn from "./components/js/SignIn";
+import NetflixPage from "./components/js/NetflixPage";
 
 function App() {
   return (

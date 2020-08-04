@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomeRows.css";
+import "../css/HomeRows.css";
 
 const HomeRows = () => {
   return (
